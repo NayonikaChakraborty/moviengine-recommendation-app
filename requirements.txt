@@ -1,0 +1,6 @@
+streamlit
+st_lottie
+pickle
+pandas
+requests
+option_menu
