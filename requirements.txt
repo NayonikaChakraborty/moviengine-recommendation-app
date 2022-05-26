@@ -1,5 +1,4 @@
 streamlit
-pickle
 pandas
 requests
 option_menu
