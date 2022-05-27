@@ -38,7 +38,7 @@ After going through all the possible algorithms that could be used to implemenen
 
 Cosine similarity is a metric used to measure how similar the documents are irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity.
 
-![alt text](https://github.com/NayonikaChakraborty/moviengine-recommendation-app/blob/main/cosine-similarity.jpg?raw=true)
+(https://github.com/NayonikaChakraborty/moviengine-recommendation-app/blob/main/cosine-similarity.jpg?raw=true)
 
 ## Collaborative filtering based anime recommender
 
@@ -55,7 +55,7 @@ I have implemented the anime recommendation system as an User-Based recommendati
 
 After going through all the possible algorithms that could be used to implemenented for Collaborative-Filtering-based recommendation, I decided to go forward with Pearson Correlation to achieve optimum execution time to efficiency in the recommendations provided alone cause in this case the final matrix is comprised of user ratings for each and every anime by each of the users, thus making it a huge dataset to deal with. Hence, we look for the similarity by the linearity in the graph among users to provide optimum recommendation in least possible execution time.
 
-![alt text](https://github.com/NayonikaChakraborty/moviengine-recommendation-app/blob/main/pearson_correlation.jpg?raw=true)
+(https://github.com/NayonikaChakraborty/moviengine-recommendation-app/blob/main/pearson_correlation.jpg?raw=true)
 
 
 
