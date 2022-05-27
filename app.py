@@ -114,7 +114,7 @@ if selected == "Hollywood":
         st_lottie(lottie_clapper, height=300, key="clapper")
 
     # Inserting recommend button
-    if st.button('Recommend'):
+    if st.button('|________Recommend Movies________|'):
         recommended_movies_names, recommended_movies_synopsis, recommended_movies_genres, recommended_movies_director, recommended_movies_cast, recommended_movies_posters, recommended_movies_ratings, recommended_movies_duration, recommended_movies_dor = recommend(
             selected_movie_name)
 
@@ -299,7 +299,7 @@ if selected == "Personalised-Anime Recommendation":
             st_lottie(lottie_falling, height=300, key="falling")
 
     # Recommend anime button
-    if st.button('--->Recommend Anime'):
+    if st.button('|________Recommend Animes________|'):
         user_anime_input = []
 
         # Declaring recommended anime in descending order
