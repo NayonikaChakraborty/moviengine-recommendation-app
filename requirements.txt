@@ -1,6 +1,6 @@
 streamlit
+st_lottie
+pickle
 pandas
 requests
-pickle
-st_lottie
 option_menu

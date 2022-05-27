@@ -19,12 +19,13 @@ st.set_page_config(page_title="Moviengine", page_icon=":clapper:", layout="wide"
 
 # Hidding In-Built streamlit hamburger menu button and streamlit footer content
 hide_menu_style = """
-        <style>
+       <style>
         #MainMenu {visibility: hidden; }
-        footer {visibility: hidden;}
+       footer {visibility: hidden;}
         
-        </style>
+       </style>
         """
+
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # Creating a horizontal nav bar
