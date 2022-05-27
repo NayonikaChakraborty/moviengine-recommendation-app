@@ -5,6 +5,7 @@ import pickle
 import pandas as pd
 import requests
 from streamlit_option_menu import option_menu
+from PIL import Image
 
 
 def space(num_lines=1):
@@ -336,6 +337,7 @@ if selected == "About Page":
     lottie_web = load_lottieur("https://assets2.lottiefiles.com/packages/lf20_hrkmmhjf.json")
     lottie_shine = load_lottieur("https://assets5.lottiefiles.com/packages/lf20_bt5q6j0d.json")
     lottie_magic = load_lottieur("https://assets4.lottiefiles.com/packages/lf20_029tjdgp.json")
+    lottie_finish = load_lottieur("https://assets2.lottiefiles.com/private_files/lf30_iojccx08.json")
 
     left_col, mid_col, right_col = st.columns([1, 2, 1])
     with left_col:
@@ -346,7 +348,60 @@ if selected == "About Page":
     with right_col:
         st_lottie(lottie_web, height=250, key="web")
 
-    st.header("1.Content Based:-")
+    st.header("1.Content based Hollywood movie recommender:-")
+    st.write("The poster of the movies is fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, "
+             "and using the IMDB id of the movie in the API. While the title, genre, runtime, rating, etc are traced "
+             "back from the original dataset itself.")
+    st.write("I have implemented it using the TMDB 5000 Movie Dataset , that can be downloaded from Kaggle.")
+    st.write("Link to Dataset: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata")
+    st.subheader("Content-based recommenders:")
+    st.write("This system uses item metadata, such as genre, director, description, actors, etc. for movies,"
+             " to make these recommendations on the basis of items having similar data.")
+    st.write("After going through all the possible algorithms that could be used to implemenented for "
+             "content-based recommendation,I decided to go forward with Cosine-Similarity to achieve optimum execution"
+             "time to efficiency in the recommendations provided alone cause in this case the final matrix is capable"
+             " of handling vectorization without making it's execution slow.")
+    st.subheader("Working of Cosine-Similarity:")
+    st.write("Cosine similarity is a metric used to measure how similar the documents are irrespective of their size."
+             " Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional"
+             " space. The cosine similarity is advantageous because even if the two similar documents are far apart by"
+             " the Euclidean distance (due to the size of the document), chances are they may still be oriented "
+             " together. The smaller the angle, higher the cosine similarity.")
+
+    cosine = Image.open('cosine-similarity.png')
+
+    st.image(cosine, caption='cosine-similarity')
+
+    st.header("2.Collaborative filtering based anime recommender:-")
+    st.write("It uses rating information from all other users to provide predictions for a user-item interaction and, "
+             "thereby, whittles down the item choices for the users, from the complete item set. There are two classes "
+             "of Collaborative Filtering:")
+    st.write("User-based, which measures the similarity between target users and other users. Item-based, which "
+             "measures the similarity between the items that target users rate or interact with and other items.")
+    st.write("I have implemented the anime recommendation system as an User-Based recommendation engine using ratings "
+             "of 320.0000 users on 16.000 animes got from the Anime Recommendation Database 2020 Dataset, that can be "
+             "downloaded from Kaggle.")
+    st.write("Link to Dataset: https://www.kaggle.com/datasets/hernan4444/anime-recommendation-database-2020")
+    st.subheader("Working of Pearson Correlation:")
+    st.write("After going through all the possible algorithms that could be used to implemenented for "
+             "Collaborative-Filtering-based recommendation, I decided to go forward with Pearson Correlation to "
+             "achieve optimum execution time to efficiency in the recommendations provided alone cause in this case "
+             "the final matrix is comprised of user ratings for each and every anime by each of the users, thus making "
+             "it a huge dataset to deal with. Hence, we look for the similarity by the linearity in the graph among "
+             "users to provide optimum recommendation in least possible execution time.")
+
+    pearson = Image.open('pearson_correlation.png')
+
+    st.image(pearson, caption='pearson_correlation')
+
+    left_col, right_col = st.columns([1, 3])
+    with left_col:
+        st_lottie(lottie_finish, height=250, key="finished_2")
+
+    with right_col:
+        # Footer
+        st.title("Hope you liked it here... :sparkles: ")
+        st.header("Stay tuned for further developments :-)")
 
 
 st.write("Made with enthusiasm by Nayonika")
