@@ -1,7 +1,7 @@
 # moviengine-recommendation-app
 Content based Hollywood movie recommender and Collaborative filtering based anime recommender deployed on heroku
 
-Check out the live demo: 
+Check out the live demo: https://moviengine-recommender-app.herokuapp.com/  (*Under Development*)
 
 Link to youtube demo:
 
