@@ -55,7 +55,7 @@ I have implemented the anime recommendation system as an User-Based recommendati
 
 After going through all the possible algorithms that could be used to implemenented for Collaborative-Filtering-based recommendation, I decided to go forward with Pearson Correlation to achieve optimum execution time to efficiency in the recommendations provided alone cause in this case the final matrix is comprised of user ratings for each and every anime by each of the users, thus making it a huge dataset to deal with. Hence, we look for the similarity by the linearity in the graph among users to provide optimum recommendation in least possible execution time.
 
-(https://github.com/NayonikaChakraborty/moviengine-recommendation-app/blob/main/pearson_correlation.png)
+![alt text](https://github.com/NayonikaChakraborty/moviengine-recommendation-app/blob/main/pearson_correlation.png)
 
 
 
