@@ -5,7 +5,7 @@ Check out the live demo: https://share.streamlit.io/nayonikachakraborty/moviengi
 
 Link to YouTube video demo: https://youtu.be/hYla0PduAyc
 
-Link to Explanation Presentation:
+Link to Explanation Presentation: https://drive.google.com/file/d/1x5iBOvw_H1pd_ph5O7mHLnO1Rm0zmZhk/view?usp=sharing
 
 
 ### Table of Contents
