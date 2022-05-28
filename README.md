@@ -3,7 +3,7 @@ Content based Hollywood movie recommender and Collaborative filtering based anim
 
 Check out the live demo: https://share.streamlit.io/nayonikachakraborty/moviengine-recommendation-app/main/app.py  
 
-Link to video demo:
+Link to YouTube video demo: https://youtu.be/hYla0PduAyc
 
 Link to Explanation Presentation:
 
