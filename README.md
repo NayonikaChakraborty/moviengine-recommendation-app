@@ -1,11 +1,12 @@
 # moviengine-recommendation-app
-Content based Hollywood movie recommender and Collaborative filtering based anime recommender deployed on heroku
+Content based Hollywood movie recommender and Collaborative filtering based anime recommender deployed on Streamlit Cloud Platform.
 
-Check out the live demo: https://moviengine-recommender-app.herokuapp.com/  (*Under Development*)
+Check out the live demo: https://share.streamlit.io/nayonikachakraborty/moviengine-recommendation-app/main/app.py  
 
-Link to youtube demo:
+Link to video demo:
 
-(CURRENTLY IT WORKS LOCALLY, WORKING ON DEPLOYMENT)
+Link to Explanation Presentation:
+
 
 ### Table of Contents
 **[How to run the project?](#How-to-run-the-project)**<br>
