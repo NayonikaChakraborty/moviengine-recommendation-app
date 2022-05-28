@@ -266,7 +266,7 @@ if selected == "Personalised-Anime Recommendation":
     with mid_col:
         # -----Header section------
         st.title(":clapper:Anime Recommender")
-        st.subheader("--->Item- Item Collaborative Filtering Based Recommendation Model:sparkles:")
+        st.subheader("--->User-User Collaborative Filtering Based Recommendation Model:sparkles:")
         selected_anime_rated = st.multiselect(
             'Rate the Animes you watched to get recommendations:',
             animes['Name'].values,
