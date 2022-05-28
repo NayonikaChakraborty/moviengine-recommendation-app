@@ -247,8 +247,6 @@ if selected == "Personalised-Anime Recommendation":
             return None
         return r.json()
     # -----LOAD ASSETS (adding lottie animation file links)-----
-    lottie_rocket = load_lottieur("https://assets1.lottiefiles.com/private_files/lf30_g9uulobe.json")
-    lottie_falling = load_lottieur("https://assets4.lottiefiles.com/packages/lf20_Bu8wPm.json")
     lottie_floating = load_lottieur("https://assets1.lottiefiles.com/packages/lf20_ZQhQzO.json")
     lottie_watch = load_lottieur("https://assets1.lottiefiles.com/packages/lf20_Ns4TLz.json")
     lottie_finished = load_lottieur("https://assets2.lottiefiles.com/private_files/lf30_iojccx08.json")
@@ -264,7 +262,6 @@ if selected == "Personalised-Anime Recommendation":
     left_col, mid_col, right_col = st.columns([1, 2, 1])
     with left_col:
         st_lottie(lottie_watch, height=300, key="watch")
-        st_lottie(lottie_rocket, height=300, key="rocket")
 
     with mid_col:
         # -----Header section------
@@ -296,7 +293,6 @@ if selected == "Personalised-Anime Recommendation":
 
         with right_col:
             st_lottie(lottie_floating, height=300, key="floating")
-            st_lottie(lottie_falling, height=300, key="falling")
 
     # Recommend anime button
     if st.button('|________Recommend Animes________|'):
